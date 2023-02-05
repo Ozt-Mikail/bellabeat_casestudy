@@ -50,8 +50,26 @@ Limitations:
 
 ## 3. Process
 
+In this step I check for wrong, missing and duplicate data in the main 5 tables used in this analysis. After this step, I clean and transform the data so it can be used for analysis. See Bellabeat_Casestudy.ipynb file for detailed documentation of this process.
+
+**3.1 checking data integrity**
+- To check data integrity we first need to get a quick overview of our data with the str() and head() functions.
+- We now check for how many unique users each table has and notice that the tables have different numbers of unique users -> There are 30 participants but activity and calories have 33 different id numbers. Weight has only 8.
+- Next, we examine if there are any missing data points -> Table weight has 65 missing data points.
+- Lastly, we check if any Tabl has duplicates. -> The daily sleep table has 3 duplicates.
+ 
+**3.2 cleaning process** 
+
+Now it's time to clean the data. First, we delete the duplicates. Then we convert the date column into the time and date format. There is currently no way to restore missing data. So we have to work with the data we have. 
+
+**3.3 tranformation porcess**
+
+For our analysis process we merge the the activity table and the sleep table.
+
 ## 4. Analyze
 
+
 ## 5. Share 
+
 
 ## 6. Act
